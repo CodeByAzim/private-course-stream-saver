@@ -1,6 +1,6 @@
 # Private Course & Stream Saver
 
-[![Download Extension](https://img.shields.io/badge/Download_Extension-v1.0.0_(ZIP)-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white)](https://github.com/CodeByAzim/private-course-stream-saver/releases/download/v1.0.0/universal-media-saver.zip)
+[![Download Extension](https://img.shields.io/badge/Download_Extension-v1.0.0_(ZIP)-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white)](https://github.com/CodeByAzim/private-course-stream-saver/releases/download/v1.0.0/Private-Course-.-Stream-Saver.zip)
 
 > **Click the green button above to download the `.zip` file directly.**
 
