@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Private Course & Stream Saver — CodeByAzimDev",
+  "name": "Private Course & Stream Saver — CodeByAzim",
   "version": "1.0.0",
   "description": "Zero-server client-side HLS, DASH, signed MP4, and MSE stream sniffer, 32-worker downloader, dual-track ISO BMFF/MPEG-TS remuxer, and HQ picture saver.",
   "permissions": [
@@ -20,7 +20,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Private Course & Stream Saver — CodeByAzimDev",
+    "default_title": "Private Course & Stream Saver — CodeByAzim",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",

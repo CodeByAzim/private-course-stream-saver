@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Private Course & Stream Saver — CodeByAzimDev
+ * Private Course & Stream Saver — CodeByAzim
  * Manifest V3 Service Worker (background.js)
  */
 
@@ -289,7 +289,7 @@ function sanitizeSubfolder(rawFolder) {
 }
 
 function sanitizeLeafFilename(rawFilename) {
-  return String(rawFilename || 'Media Download [CodeByAzimDev].mp4')
+  return String(rawFilename || 'Media Download [CodeByAzim].mp4')
     .replace(/^[/\\]+/, '')
     .replace(/[<>:"/\\|?*\x00-\x1f]/g, ' ')
     .replace(/\s+/g, ' ')
@@ -1734,7 +1734,7 @@ chrome.downloads.onChanged.addListener(async (delta) => {
     chrome.notifications.create(`ums_saved_${delta.id}`, {
       type: 'basic',
       iconUrl: 'icons/icon128.png',
-      title: 'Private Course & Stream Saver — CodeByAzimDev',
+      title: 'Private Course & Stream Saver — CodeByAzim',
       message: `Saved: ${entry.filename}`
     });
   } else if (state === 'interrupted') {
@@ -2232,7 +2232,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         const { url, filename, isBatch } = msg;
         const saveSettings = await getSaveSettings();
         const target = resolveDownloadDestination(
-          filename || 'HQ_Image [CodeByAzimDev].jpg',
+          filename || 'HQ_Image [CodeByAzim].jpg',
           saveSettings,
           Boolean(isBatch)
         );

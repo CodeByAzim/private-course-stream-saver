@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Private Course & Stream Saver — CodeByAzimDev
+ * Private Course & Stream Saver — CodeByAzim
  * Inline Popup Controller (popup.js)
  */
 
@@ -179,7 +179,7 @@
     const allowed = new Set(['mp3', 'mp4', 'ts']);
     const fmt = String(outputFormat || 'mp4').toLowerCase();
     const ext = allowed.has(fmt) ? fmt : 'mp4';
-    return `${cleanCaption} [CodeByAzimDev].${ext}`;
+    return `${cleanCaption} [CodeByAzim].${ext}`;
   }
 
   function normalizeDurationSeconds(raw) {
@@ -1153,7 +1153,7 @@
       dlBtn.textContent = 'Download HQ';
       dlBtn.addEventListener('click', () => {
         const ext = guessImgExt(img.url);
-        const filename = `${sanitizeCaption(img.alt || `HQ_Image_${idx + 1}`)} [CodeByAzimDev].${ext}`;
+        const filename = `${sanitizeCaption(img.alt || `HQ_Image_${idx + 1}`)} [CodeByAzim].${ext}`;
         if (hasChromeExtensionApi()) {
           chrome.runtime.sendMessage({
             type: 'DOWNLOAD_DIRECT_MEDIA',
@@ -1368,7 +1368,7 @@
     const images = getDetectedImages();
     images.forEach((img, idx) => {
       const ext = guessImgExt(img.url);
-      const filename = `${sanitizeCaption(img.alt || `HQ_Image_${idx + 1}`)} [CodeByAzimDev].${ext}`;
+      const filename = `${sanitizeCaption(img.alt || `HQ_Image_${idx + 1}`)} [CodeByAzim].${ext}`;
       chrome.runtime.sendMessage({
         type: 'DOWNLOAD_DIRECT_MEDIA',
         url: img.url,

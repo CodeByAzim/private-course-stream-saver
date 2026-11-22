@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Private Course & Stream Saver — CodeByAzimDev
+ * Private Course & Stream Saver — CodeByAzim
  * Offscreen Concurrent 32-Worker CORS-Safe Engine & Dual-Track Remuxer (offscreen.js)
  */
 

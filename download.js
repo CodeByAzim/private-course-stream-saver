@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Private Course & Stream Saver — CodeByAzimDev
+ * Private Course & Stream Saver — CodeByAzim
  * Dedicated Full-Page Download & Stream Diagnostics Dashboard (download.js)
  */
 
@@ -247,7 +247,7 @@
     const allowed = new Set(['mp3', 'mp4', 'ts']);
     const fmt = String(outputFormat || 'mp4').toLowerCase();
     const ext = allowed.has(fmt) ? fmt : 'mp4';
-    return `${cleanCaption} [CodeByAzimDev].${ext}`;
+    return `${cleanCaption} [CodeByAzim].${ext}`;
   }
 
   function formatQualityBaseLabel(height) {
@@ -1136,13 +1136,13 @@
     dlAllBtn.textContent = `Download All HQ (${images.length})`;
     dlAllBtn.addEventListener('click', () => {
       if (!hasChromeExtensionApi()) {
-        renderSavedBanner({ filename: `${images.length} HQ Pictures [CodeByAzimDev]` });
+        renderSavedBanner({ filename: `${images.length} HQ Pictures [CodeByAzim]` });
         return;
       }
       images.forEach((img, idx) => {
         const m = String(img.url || '').match(/\.(png|webp|jpeg|jpg|avif|gif)(\?|#|$)/i);
         const ext = m ? (m[1].toLowerCase() === 'jpeg' ? 'jpg' : m[1].toLowerCase()) : 'jpg';
-        const filename = `${sanitizeCaption(img.alt || `HQ_Image_${idx + 1}`)} [CodeByAzimDev].${ext}`;
+        const filename = `${sanitizeCaption(img.alt || `HQ_Image_${idx + 1}`)} [CodeByAzim].${ext}`;
         chrome.runtime.sendMessage({ type: 'DOWNLOAD_DIRECT_MEDIA', url: img.url, filename, isBatch: true });
       });
     });
@@ -1173,7 +1173,7 @@
       btn.addEventListener('click', () => {
         const m = String(img.url || '').match(/\.(png|webp|jpeg|jpg|avif|gif)(\?|#|$)/i);
         const ext = m ? (m[1].toLowerCase() === 'jpeg' ? 'jpg' : m[1].toLowerCase()) : 'jpg';
-        const filename = `${sanitizeCaption(img.alt || `HQ_Image_${idx + 1}`)} [CodeByAzimDev].${ext}`;
+        const filename = `${sanitizeCaption(img.alt || `HQ_Image_${idx + 1}`)} [CodeByAzim].${ext}`;
         if (hasChromeExtensionApi()) {
           chrome.runtime.sendMessage({ type: 'DOWNLOAD_DIRECT_MEDIA', url: img.url, filename, isBatch: false });
         } else {
@@ -1463,7 +1463,7 @@
         { url: '/demo/sample-frame-2.png', thumbUrl: '/demo/sample-frame-2.png', width: 1600, height: 1200, alt: 'Muxer Pipeline Diagram' }
       ]
     };
-    recentSaved = [{ filename: 'Module 03 Stream Deduplication [CodeByAzimDev].mp4', timestamp: Date.now() }];
+    recentSaved = [{ filename: 'Module 03 Stream Deduplication [CodeByAzim].mp4', timestamp: Date.now() }];
   }
 
   function launchStandalonePreviewJob(job, settings) {

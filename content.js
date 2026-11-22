@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Private Course & Stream Saver — CodeByAzimDev
+ * Private Course & Stream Saver — CodeByAzim
  * Content Script (all_frames: true)
  */
 
@@ -902,7 +902,7 @@
       if (!hqUrl) return;
       const base = sanitizeFilenameBase(activeTarget.alt || extractTopLevelCaption() || 'HQ_Image');
       const ext = guessImageExtension(hqUrl);
-      const filename = `${base} [CodeByAzimDev].${ext}`;
+      const filename = `${base} [CodeByAzim].${ext}`;
       safeSendMessage({
         type: 'DOWNLOAD_DIRECT_MEDIA',
         url: hqUrl,
@@ -922,7 +922,7 @@
         safeSendMessage({
           type: 'DOWNLOAD_DIRECT_MEDIA',
           url: src,
-          filename: `${base} [CodeByAzimDev].${ext}`,
+          filename: `${base} [CodeByAzim].${ext}`,
           isBatch: false
         });
         overlayBtn.querySelector('span').textContent = 'Saving...';

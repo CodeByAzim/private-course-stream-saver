@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Private Course & Stream Saver — CodeByAzimDev
+ * Private Course & Stream Saver — CodeByAzim
  * MAIN-World Network & MSE Stream Hook (page_hook.js)
  * Registered with "world": "MAIN", "all_frames": true, "run_at": "document_start"
  */
